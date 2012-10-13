@@ -7,18 +7,29 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
+alias d="cd ~/Dropbox"
+alias mine="cd ~/Sites/dev/ee/assets; cw"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/Projects"
-alias g="git"
+alias p="cd ~/Sites"
 alias h="history"
 alias j="jobs"
 alias v="vim"
+alias c="coda"
 alias m="mate ."
 alias s="subl ."
 alias o="open"
 alias oo="open ."
+alias dotfiles="cd ~/Documents/Development/Clones/dotfiles"
+
+# git
+alias g="git"
+alias gl="git pull"
+alias gp="git push "
+
+# Sass / Compass
+alias cw="compass watch"
+alias minify="compass compile --output-style compressed --force"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
