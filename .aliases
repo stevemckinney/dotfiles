@@ -21,15 +21,19 @@ alias s="subl ."
 alias o="open"
 alias oo="open ."
 alias dotfiles="cd ~/Documents/Development/Clones/dotfiles"
+alias clearlog="sudo rm -rf /private/var/log/asl/*.asl"
+alias lilydotfil="cd ~/Sites/wordpress/wp-content/themes/lily/assets; cw"
 
 # git
 alias g="git"
 alias gl="git pull"
-alias gp="git push "
+alias gp="git push"
 
 # Sass / Compass
 alias cw="compass watch"
 alias minify="compass compile --output-style compressed --force"
+alias compact="compass compile --output-style compact --force"
+alias expanded="compass compile --output-style expanded --force"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
