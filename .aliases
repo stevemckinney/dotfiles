@@ -35,6 +35,9 @@ alias minify="compass compile --output-style compressed --force"
 alias compact="compass compile --output-style compact --force"
 alias expanded="compass compile --output-style expanded --force"
 
+# user stylesheets
+alias userstyle='coda "/Users/Steve/Library/Application Support/Google/Chrome/Default/User StyleSheets/custom.css"'
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
