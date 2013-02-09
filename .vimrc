@@ -87,9 +87,11 @@ noremap <leader>ss :call StripWhitespace()<CR>
 " Save a file as root (,W)
 noremap <leader>W :w !sudo tee % > /dev/null<CR>
 
-syntax enable
+execute pathogen#infect()
+syntax on
 set background=dark
 colorscheme solarized
+filetype plugin indent on
 
 " Automatic commands
 if has("autocmd")
