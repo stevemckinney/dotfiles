@@ -29,7 +29,6 @@ Bundle 'tpope/vim-surround'
 Bundle 'scrooloose/syntastic'
 Bundle 'ervandew/supertab'
 Bundle 'Raimondi/delimitMate'
-Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'sophacles/vim-bundle-sparkup'
 Bundle 'Rykka/colorv.vim'
 " needed for fetching schemes online.
@@ -52,6 +51,8 @@ Bundle 'msanders/cocoa.vim'
 Bundle 'empanda/vim-varnish'
 Bundle 'itspriddle/vim-jquery'
 Bundle 'atourino/jinja.vim'
+Bundle 'rizzatti/funcoo.vim'
+Bundle 'rizzatti/dash.vim'
 
 " Python bundles
 Bundle 'nvie/vim-flake8'
@@ -294,12 +295,6 @@ let g:sparkupNextMapping = '<c-k>'
 
 " Jedi
 let g:jedi#goto_command = "<leader>g"
-
-" Double rainbow - What does it mean!?
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
 
 set laststatus=2
 let g:syntastic_enable_signs = 1
