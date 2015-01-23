@@ -1,7 +1,6 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH"
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+export PATH="/usr/local/Cellar/node/0.10.24/bin:$PATH"
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -49,4 +48,11 @@ export CLICOLOR=1
 # Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
 
-echo 'source "`brew --prefix grc`/etc/grc.bashrc"' >> ~/.bash_profile
+echo 'source "`brew --prefix grc`/etc/grc.bashrc"' >> ~/.bash_profilesource "`brew --prefix grc`/etc/grc.bashrc"
+
+MYSQL=/usr/local/mysql/bin
+export PATH=$PATH:$MYSQL
+export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+
+# correct rvm path
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

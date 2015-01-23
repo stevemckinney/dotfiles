@@ -1,0 +1,19 @@
+gem install bundler
+gem install sass --pre
+gem install compass --pre
+gem install susy
+gem install ceaser-easing
+gem install compass-recipes
+gem install jekyll 
+gem install animate-sass 
+gem install sass-globbing
+gem install --version '~> 0.9' rb-fsevent
+
+npm install -g grunt-cli
+npm install -g grunt-contrib-compass
+npm install -g grunt-contrib-uglify
+npm install -g grunt-grunticon
+npm install -g matchdep
+npm install -g grunt-init
+
+git clone https://github.com/gruntjs/grunt-init-gruntfile.git ~/.grunt-init/gruntfile
