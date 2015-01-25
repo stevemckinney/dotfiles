@@ -1,4 +1,4 @@
- #!/bin/bash
+#!/bin/bash
 
 # Make sure we’re using the latest Homebrew
 brew update
@@ -11,6 +11,7 @@ brew install coreutils
 echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH."
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install findutils
+
 # Install Bash 4
 brew install bash
 
@@ -28,6 +29,7 @@ brew install homebrew/dupes/grep
 brew tap josegonzalez/homebrew-php
 brew install php54
 brew install php55
+brew install php56
 brew install josegonzalez/php/composer
 
 # These two formulae didn’t work well last time I tried them:
@@ -38,7 +40,7 @@ brew install josegonzalez/php/composer
 brew install ack
 #brew install exiv2
 brew install git
-brew install imagemagick
+brew install imagemagick --with-webp
 brew install lynx
 brew install node
 brew install rename
@@ -46,6 +48,27 @@ brew install rhino
 brew install tree
 brew install webkit2png
 brew install coda-cli
+
+brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
+
+brew cask install dropbox
+brew cask install google-chrome
+brew cask install google-chrome-canary
+brew cask install adobe-creative-cloud
+brew cask install coda
+brew cask install livereload
+brew cask install hazel
+brew cask install codekit
+brew cask install keyboard-cleaner
+brew cask install sequel-pro
+brew cask install alfred
+brew cask install mailbox
+brew cask install slack
+brew cask install imageoptim
+brew cask install github
+brew cask install bartender
+brew cask install onyx
 
 # Remove outdated versions from the cellar
 brew cleanup

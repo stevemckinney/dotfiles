@@ -1,4 +1,5 @@
-# Mathias’s dotfiles
+# Steve’s dotfiles
+Customised from Mathias
 
 ## Installation
 
